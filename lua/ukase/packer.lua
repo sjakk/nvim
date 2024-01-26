@@ -13,7 +13,9 @@ use {
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 
-use({ 'rose-pine/neovim', as = 'rose-pine', config = function() vim.cmd("colorscheme rose-pine")end})
+--use({ 'rose-pine/neovim', as = 'rose-pine', config = function() vim.cmd("colorscheme rose-pine")end})
+
+use ({'rebelot/kanagawa.nvim', as = 'kanagawa', config = function() vim.cmd("colorscheme kanagawa")end})
 
 use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 use 'ThePrimeagen/harpoon'
@@ -37,4 +39,7 @@ use {
 	"windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
 }
+
+use 'andweeb/presence.nvim'
+
   end)
