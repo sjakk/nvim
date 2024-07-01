@@ -42,4 +42,13 @@ use {
 
 use 'andweeb/presence.nvim'
 
+use {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = function()
+        require("nvim-autopairs").setup {}
+    end
+}
+
+
   end)
