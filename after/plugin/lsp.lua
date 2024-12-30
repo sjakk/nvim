@@ -11,6 +11,9 @@ lsp.ensure_installed({
 "gopls",
 "rust_analyzer",
 "ols",
+"zls",
+"nim_langserver",
+"ts_ls",
 })
 
 -- (Optional) Configure lua language server for neovim
