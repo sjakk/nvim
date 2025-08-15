@@ -25,8 +25,6 @@ use {
   requires = {
     -- LSP Support
     {'neovim/nvim-lspconfig'},             -- Required
-    {'williamboman/mason.nvim'},           -- Optional
-    {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
     -- Autocompletion
     {'hrsh7th/nvim-cmp'},     -- Required

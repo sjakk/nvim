@@ -14,10 +14,15 @@ lsp.ensure_installed({
 "zls",
 "nim_langserver",
 "ts_ls",
+"jdtls",
 })
 
 -- (Optional) Configure lua language server for neovim
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+
+vim.lsp.enable('gopls')
+vim.lsp.enable('ols')
+vim.lsp.enable('rust_analyzer')
 
 lsp.setup()
 
